@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:theme="@style/Theme.MaterialComponents.NoActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="70dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <!-- First Name Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="8dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="2dp"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/update_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" First Name"
+                android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Last Name Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="2dp"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/update_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Email Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="2dp"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/update_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:hint="Email"
+                android:inputType="none"
+                android:longClickable="false"
+                android:textIsSelectable="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="2dp"
+            app:hintEnabled="true">
+
+            <EditText
+                android:id="@+id/update_input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Update Button -->
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Update Account"
+            android:textColor="@color/orange"
+            app:cornerRadius="20dp" />
+
+        <!-- LogOut Button -->
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Logout"
+            android:textColor="@color/orange"
+            app:cornerRadius="20dp" />
+
+        <!-- Delete Button -->
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Delete Account"
+            android:textColor="@color/orange"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
